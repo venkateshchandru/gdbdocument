@@ -158,14 +158,14 @@ This repository provides a comprehensive reference for using GCC (GNU Compiler C
 
 3. **Attaching GDB to a running process:**
    ```bash
-  #Get process ID:
-  ps aux | grep <name>
+   #Get process ID:
+   ps aux | grep <name>
 
-  #Attach to a process:
-  gdb -p <process_id>
+   #Attach to a process:
+   gdb -p <process_id>
 
-  #Detach from a process:
-  detach
+   #Detach from a process:
+   detach
 
 4. **Handling core dumps:**
    ```bash
