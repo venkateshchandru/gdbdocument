@@ -156,8 +156,8 @@ This repository provides a comprehensive reference for using GCC (GNU Compiler C
    ```bash
    call <function_name(arg...)>
 
-3.**Attaching GDB to a running process:**
-  ```bash
+3. **Attaching GDB to a running process:**
+   ```bash
   #Get process ID:
   ps aux | grep <name>
 
@@ -167,3 +167,54 @@ This repository provides a comprehensive reference for using GCC (GNU Compiler C
   #Detach from a process:
   detach
 
+4. **Handling core dumps:**
+   ```bash
+   #Set unlimited core dump size:
+    sudo ulimit -c unlimited
+
+   #Check core dump size:
+    ulimit -c
+
+   #Install necessary packages
+    sudo apt install systemd-coredump
+
+   #View core dump files
+    coredumpctl dump
+    coredumpctl gdb
+
+### Breakpoints and Commands
+
+1. **Set commands to execute automatically at breakpoints:**
+   ```bash
+   commands <breakpoint_num>
+   print <variable>
+   bt
+   end
+
+### GDB Scripts
+
+1. **Create a script for GDB commands:**
+   
+   File name: .gdbinit
+   Add commands inside the file.
+
+### Advanced Commands
+
+1. **Set a variable value:**
+   ```bash
+   set var <variable_name> = <value>
+
+2. **Reverse Debugging:**
+   ```bash
+   target record-full
+   reverse-next
+
+3. **Debugging multithreaded programs:**
+  
+   1. ***View Threads:***
+      ```bash
+      info threads
+   
+   2. ***Switch to a specific thread:***
+      ```bash
+      thread <thread_num>
