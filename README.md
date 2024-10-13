@@ -119,3 +119,51 @@ This repository provides a comprehensive reference for using GCC (GNU Compiler C
 19. **Remove a variable from display list:**
    ```bash
    undisplay <display_num>
+
+### Program Stack Commands
+
+1. **Backtrace to see the call stack:**
+   ```bash
+   bt
+
+2. **Finish the current stack frame:**
+   ```bash
+   finish
+
+3. **Navigate up/down in the call stack:**
+   ```bash
+   up
+   down
+
+
+### Debugging Issues
+1. **Segmentation fault:** Occurs when a program accesses memory it does not own.
+
+2. **Stack overflow:** Happens when there is excessive memory usage in the call stack.
+
+### GDB Help
+
+**Get help for a specific command:**
+   ```bash
+   help <action>
+
+
+### Debugging Techniques
+
+1. **Delta debugging:** Use multiple breakpoints to isolate errors.
+
+2. **Calling functions within GDB:**
+   ```bash
+   call <function_name(arg...)>
+
+3.**Attaching GDB to a running process:**
+  ```bash
+  #Get process ID:
+  ps aux | grep <name>
+
+  #Attach to a process:
+  gdb -p <process_id>
+
+  #Detach from a process:
+  detach
+
