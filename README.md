@@ -84,41 +84,41 @@ This repository provides a comprehensive reference for using GCC (GNU Compiler C
     b <file_name>:<line_number> if <condition>
 
 11. **Jump directly to execution:**
-   ```bash
-   advance <function_name or filename:line_num>
+    ```bash
+    advance <function_name or filename:line_num>
 
 12. **Execute until a specific line:**
-   ```bash
-   until <function_name or filename:line_num>
+    ```bash
+    until <function_name or filename:line_num>
 
 13. **Watch a variable for changes:**
-   ```bash
-   watch <variable_name>
+    ```bash
+    watch <variable_name>
 
 14. **Enable/disable a breakpoint:**
-   ```bash
-   enable <breakpoint_num>
-   disable <breakpoint_num>
+    ```bash
+    enable <breakpoint_num>
+    disable <breakpoint_num>
 
 15. **Save breakpoints to a file:**
-   ```bash
-   source <file_name.txt>
+    ```bash
+    source <file_name.txt>
 
 16. **Load breakpoints from a file:**
-   ```bash
-   source <file_name.txt>
+    ```bash
+    source <file_name.txt>
 
 17. **Display changes in a variable:**
-   ```bash
-   display <variable_name>
+    ```bash
+    display <variable_name>
 
 18. **View list of displayed variables:**
-   ```bash
-   info display
+    ```bash
+    info display
 
 19. **Remove a variable from display list:**
-   ```bash
-   undisplay <display_num>
+    ```bash
+    undisplay <display_num>
 
 ### Program Stack Commands
 
@@ -144,8 +144,8 @@ This repository provides a comprehensive reference for using GCC (GNU Compiler C
 ### GDB Help
 
 **Get help for a specific command:**
-   ```bash
-   help <action>
+    ```bash
+     help <action>
 
 
 ### Debugging Techniques
