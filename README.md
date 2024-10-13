@@ -80,8 +80,8 @@ This repository provides a comprehensive reference for using GCC (GNU Compiler C
    tty <path>
 
 10. **Set a conditional breakpoint:**
-   ```bash
-   b <file_name>:<line_number> if <condition>
+    ```bash
+    b <file_name>:<line_number> if <condition>
 
 11. **Jump directly to execution:**
    ```bash
