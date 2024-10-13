@@ -45,7 +45,7 @@ This repository provides a comprehensive reference for using GCC (GNU Compiler C
 
 1. **Start GDB with a Text User Interface (TUI):**
    ```bash
-   whatis <variable>
+   gdb --tui
 
 2. **View source code:**
    ```bash
@@ -57,11 +57,11 @@ This repository provides a comprehensive reference for using GCC (GNU Compiler C
 
 4. **View members of a struct variable:**
    ```bash
-   *<pointer_variable>
+   ptype <variable>
 
 5. **Dereference a pointer:**
    ```bash
-   gdb --tui
+   * <pointer_name>
 
 6. **Set a temporary breakpoint:**
    ```bash
@@ -102,7 +102,7 @@ This repository provides a comprehensive reference for using GCC (GNU Compiler C
 
 15. **Save breakpoints to a file:**
     ```bash
-    source <file_name.txt>
+    save breakpoints <file_name.txt>
 
 16. **Load breakpoints from a file:**
     ```bash
