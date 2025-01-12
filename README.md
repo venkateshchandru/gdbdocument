@@ -80,7 +80,7 @@ This repository provides a comprehensive reference for using GCC (GNU Compiler C
 
 10. **Redirect GDB output:**
     ```bash
-   tty <path>
+    tty <path>
 
 11. **Set a conditional breakpoint:**
     ```bash
