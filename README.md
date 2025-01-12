@@ -44,80 +44,82 @@ This repository provides a comprehensive reference for using GCC (GNU Compiler C
 ### Basic Commands
 
 1. **Start GDB with a Text User Interface (TUI):**
+
    shortcut in GDB terminal: ctrl+x+a
+
    ```bash
    gdb --tui
 
-2. **View source code:**
+3. **View source code:**
    ```bash
    list
 
-3. **View the type of a variable:**
+4. **View the type of a variable:**
    ```bash
    whatis <variable>
 
-4. **View members of a struct variable:**
+5. **View members of a struct variable:**
    ```bash
    ptype <variable>
 
-5. **Dereference a pointer:**
+6. **Dereference a pointer:**
    ```bash
    * <pointer_name>
 
-6. **Set a temporary breakpoint:**
+7. **Set a temporary breakpoint:**
    ```bash
    tbreak
 
-7. **List all breakpoints:**
+8. **List all breakpoints:**
    ```bash
    info breakpoints
 
-8. **Delete a breakpoint:**
+9. **Delete a breakpoint:**
    ```bash
    delete <breakpoint_num>
 
-9. **Redirect GDB output:**
+10. **Redirect GDB output:**
    ```bash
    tty <path>
 
-10. **Set a conditional breakpoint:**
+11. **Set a conditional breakpoint:**
     ```bash
     b <file_name>:<line_number> if <condition>
 
-11. **Jump directly to execution:**
+12. **Jump directly to execution:**
     ```bash
     advance <function_name or filename:line_num>
 
-12. **Execute until a specific line:**
+13. **Execute until a specific line:**
     ```bash
     until <function_name or filename:line_num>
 
-13. **Watch a variable for changes:**
+14. **Watch a variable for changes:**
     ```bash
     watch <variable_name>
 
-14. **Enable/disable a breakpoint:**
+15. **Enable/disable a breakpoint:**
     ```bash
     enable <breakpoint_num>
     disable <breakpoint_num>
 
-15. **Save breakpoints to a file:**
+16. **Save breakpoints to a file:**
     ```bash
     save breakpoints <file_name.txt>
 
-16. **Load breakpoints from a file:**
+17. **Load breakpoints from a file:**
     ```bash
     source <file_name.txt>
 
-17. **Display changes in a variable:**
+18. **Display changes in a variable:**
     ```bash
     display <variable_name>
 
-18. **View list of displayed variables:**
+19. **View list of displayed variables:**
     ```bash
     info display
 
-19. **Remove a variable from display list:**
+20. **Remove a variable from display list:**
     ```bash
     undisplay <display_num>
 
