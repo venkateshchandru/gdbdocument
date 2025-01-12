@@ -233,3 +233,11 @@ This repository provides a comprehensive reference for using GCC (GNU Compiler C
 3. **Directly examing memory: the x command:**
       ```bash
        x &i
+
+4. **Read watchpoint for a variable:**
+      ```bash
+       rwatch <varaiable>
+
+5. **Read and write watchpoint for a variable:**
+      ```bash
+       awatch <varaiable>
