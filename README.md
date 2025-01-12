@@ -273,14 +273,14 @@ The core contains the memory contents of the process at the point of the seg-fau
 Every process has various limits associated with it.
 
       ```bash
-      $ man setrlimit
+       $ man setrlimit
 
 Bash offers a built-in ulimit through which we can edit these.
 
 Core-file max-size (ulimit -c/RLIMIT_CORE) controls the maximum core file size that can be generated when the process snaps.
 
       ```bash
-      $ ulimit -c unlimited
+       $ ulimit -c unlimited
 
 ### 3. Where is my core?
 
@@ -293,7 +293,7 @@ Core files can be examined with gdb, the GNU debugger.
 It can read the crash informations, and display (among other things) the backtrace that leads to the crash.
 
       ```bash
-      $ gdb /path/to/binary /path/to/core/file
+       $ gdb /path/to/binary /path/to/core/file
 
 After gdb finished to read the input and shows its prompt, execute:
       
@@ -302,8 +302,31 @@ After gdb finished to read the input and shows its prompt, execute:
 or 
 
       ```bash
-      (gdb) bt
+       (gdb) bt
 
 GDB will then output the backtrace.
 
+### Dumping core from outside the program
 
+One possibility is with gdb, if available. This will let the program running:
+
+      ```bash
+       (gdb) attach <pid>
+       (gdb) generate-core-file <optional-filename>
+       (gdb) detach
+
+Another possibility is to signal the process. This will terminate it, assuming the signal is not caught by a custom signal handler:
+
+      ```bash
+       kill -s SIGABRT <pid>
+
+### Dumping core from within the program
+
+      ```bash
+       {
+       /*
+        * Alternative:
+        *   char *p = NULL; *p = 0;
+        */
+         abort();
+         }
