@@ -229,3 +229,7 @@ This repository provides a comprehensive reference for using GCC (GNU Compiler C
 2. **Prints the value in hexadecimal:**
       ```bash
        print/x n
+      
+3. **Directly examing memory: the x command:**
+      ```bash
+       x &i
