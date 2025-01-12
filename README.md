@@ -44,6 +44,7 @@ This repository provides a comprehensive reference for using GCC (GNU Compiler C
 ### Basic Commands
 
 1. **Start GDB with a Text User Interface (TUI):**
+   shortcut in GDB terminal: ctrl+x+a
    ```bash
    gdb --tui
 
