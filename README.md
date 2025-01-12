@@ -79,7 +79,7 @@ This repository provides a comprehensive reference for using GCC (GNU Compiler C
    delete <breakpoint_num>
 
 10. **Redirect GDB output:**
-   ```bash
+    ```bash
    tty <path>
 
 11. **Set a conditional breakpoint:**
