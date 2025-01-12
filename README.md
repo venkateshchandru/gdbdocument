@@ -245,7 +245,10 @@ This repository provides a comprehensive reference for using GCC (GNU Compiler C
       ```bash
        awatch <varaiable>
 
-6. **Set logging into file**
+6. **Set logging into file:**
       ```bash
        set logging on
+
+***Note***
+      GDB saves all output from this point in a text file called gdb.txt that resides in the directory in which you are running GDB 
 
