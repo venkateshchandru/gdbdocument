@@ -244,3 +244,11 @@ This repository provides a comprehensive reference for using GCC (GNU Compiler C
 5. **Read and write watchpoint for a variable:**
       ```bash
        awatch <varaiable>
+
+6. **Set logging into file**
+      ```bash
+       set logging on
+        
+      ```bash
+       set logging off
+
