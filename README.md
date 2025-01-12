@@ -16,6 +16,7 @@ This repository provides a comprehensive reference for using GCC (GNU Compiler C
   - [Breakpoints and Commands](#breakpoints-and-commands)
   - [GDB Scripts](#gdb-scripts)
   - [Advanced Commands](#advanced-commands)
+  - [GDB UPDATED COMMANDS] (#GDB-UPDATED-COMMANDS)
 
 ---
 
