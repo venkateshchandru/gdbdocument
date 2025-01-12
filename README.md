@@ -17,6 +17,7 @@ This repository provides a comprehensive reference for using GCC (GNU Compiler C
   - [GDB Scripts](#gdb-scripts)
   - [Advanced Commands](#advanced-commands)
   - [GDB UPDATED COMMANDS](#GDB-UPDATED-COMMANDS)
+- [Core Dump](#Core-Dump)
 
 ---
 
