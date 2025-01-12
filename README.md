@@ -218,3 +218,14 @@ This repository provides a comprehensive reference for using GCC (GNU Compiler C
    2. ***Switch to a specific thread:***
       ```bash
       thread <thread_num>
+
+
+### GDB UPDATED COMMANDS
+
+1. **Finish executing the current function:**
+      ```bash
+      finish
+
+2. **Prints the value in hexadecimal:**
+      ```bash
+       print/x n
