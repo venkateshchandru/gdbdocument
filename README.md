@@ -19,7 +19,7 @@ This repository provides a comprehensive reference for using GCC (GNU Compiler C
   - [GDB UPDATED COMMANDS](#GDB-UPDATED-COMMANDS)
 - [Core Dump](#Core-Dump)
 - [System call trace](#System-call-trace)
-- [Library call_tracing](#Library call_tracing)
+- [Library call_tracing](#Library-call-tracing)
 
 ---
 
