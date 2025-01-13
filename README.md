@@ -19,6 +19,7 @@ This repository provides a comprehensive reference for using GCC (GNU Compiler C
   - [GDB UPDATED COMMANDS](#GDB-UPDATED-COMMANDS)
 - [Core Dump](#Core-Dump)
 - [System call trace](#System-call-trace)
+- [Library call_tracing](#Library call_tracing)
 
 ---
 
@@ -352,3 +353,15 @@ Another possibility is to signal the process. This will terminate it, assuming t
 
       ```bash
        strace -e trace='<system_call>' <program/command>
+
+### Attach to a Process
+
+      ```bash
+       strace -p <PID>
+
+## Library call_tracing
+
+ltrace is a command-line utility used to trace library calls made by a program. It shows calls to functions in shared libraries, such as libc, along with their arguments and return values. It is particularly useful for debugging issues related to dynamic linking or library usage.
+
+      ```bash
+       ltrace <program>
