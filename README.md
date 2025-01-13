@@ -18,6 +18,7 @@ This repository provides a comprehensive reference for using GCC (GNU Compiler C
   - [Advanced Commands](#advanced-commands)
   - [GDB UPDATED COMMANDS](#GDB-UPDATED-COMMANDS)
 - [Core Dump](#Core-Dump)
+- [System call trace](#System-call-trace)
 
 ---
 
@@ -332,3 +333,22 @@ Another possibility is to signal the process. This will terminate it, assuming t
         */
          abort();
          }
+
+## System call trace
+
+ Strace is a debugging tool that monitors the system calls made by a program and the signals it receives
+
+### Basic command
+
+      ```bash
+       strace <program/command>
+
+### Basic command with statistics of each system call
+
+      ```bash
+       strace -c <program/command>
+
+### Tracing Only specific system calls
+
+      ```bash
+       strace -e trace='<system_call>' <program/command>
