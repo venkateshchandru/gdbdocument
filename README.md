@@ -359,7 +359,7 @@ Another possibility is to signal the process. This will terminate it, assuming t
       ```bash
        strace -p <PID>
 
-## Library call_tracing
+## Library call tracing
 
 ltrace is a command-line utility used to trace library calls made by a program. It shows calls to functions in shared libraries, such as libc, along with their arguments and return values. It is particularly useful for debugging issues related to dynamic linking or library usage.
 
